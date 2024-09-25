@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.header{
+    background-color: black;
+}
+.navbar{
+    background: black;
+    height: 80px;
+    width: 100%;
+}
+.logo img{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    top: 10px;
+    left: 20px;
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+.navbar ul li{
+    position: relative;
+    display: inline-block;
+    line-height: 80px;
+    margin: 0;
+}
+.navbar ul li a{
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.navbar ul li::after{ 
+    content: '';
+    height: 3px;
+    width: 0;
+    background: green;
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.btn{
+    float: right;
+    color: white;
+    font-size: 30px;
+    line-height: 90px;
+    margin-right: 50px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.content{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Data/galaxy.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
+}
+.place{
+    font-size: 30px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+.rocket1{
+    width: auto;
+    height: 310px;
+    z-index: 2;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.rocket1 img{
+    width: auto;
+    height: 300px;
+}
+.rocket1 table{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.rocket2{
+    width: auto;
+    height: 310px;
+    z-index: 2;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.rocket2 table{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.rocket2 img{
+    width: auto;
+    height: 300px;
+}
+.rocket3{
+    width: auto;
+    height: 310px;
+    z-index: 2;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.rocket3 table{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.rocket3 img{
+    width: auto;
+    height: 300px;
+}
+.rocket4{
+    width: auto;
+    height: 310px;
+    z-index: 2;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.rocket4 table{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.rocket4 img{
+    width: auto;
+    height: 300px;
+}
+.bs{
+    font-size: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+#arrow{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 6;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+}
+#arrow:hover{
+    background-color: green;
+}
+@media screen and (max-width: 970px){
+    .header{
+        text-align: center;
+    }
+    .btn{
+        display: block;
+        z-index: 2;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #081c30;
+        text-align: center;
+        top: 80px;
+        left: -100%;
+        transition: all 0.5s;
+        z-index: 1;
+    }
+    .navbar ul li{
+        display: block;
+        line-height: 40px;
+        margin: 50px 0;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #081c30;
+    }
+    .navbar ul li::after{
+        bottom: 8px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .content{
+        position: absolute;
+        background-repeat: repeat;
+        z-index: 0;
+    }
+    .place{
+        font-size: 25px;
+    }
+    .rocket1,.rocket2,.rocket3,.rocket4{
+        width: auto;
+        height: 70%;
+    }
+    .rocket1 img{
+        width: 40%;
+        height: auto;
+    }
+    .rocket2 img{
+        width: 40%;
+        height: auto;
+    }
+    .rocket3 img{
+        width: 40%;
+        height: auto;
+    } 
+    .rocket4 img{
+        width: 40%;
+        height: auto;
+    }
+    .rocket1 table,.rocket2 table,.rocket3 table,.rocket4 table{
+        font-size: 17px;
+        line-height: 1.3;
+    }
+    .bs{
+        font-size: 27px;
+        text-align: center;
+    }
+}

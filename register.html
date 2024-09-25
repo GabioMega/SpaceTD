@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo"><img src="Data/logo.png" alt="logo"></label>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="vehicles.html">Vehicles</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="launches.html">Launches</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+          </nav>
+          <section></section>
+    </header>
+    <div class="content">
+        <div class="form">
+            <div class="left">
+
+            </div>
+            <div class="right">
+                <div class="title">
+                    <h1>Register Now!</h1>
+                </div>
+                <form action="" onsubmit="formvalidation(event)">
+                    <input type="text" id="name" placeholder="Full Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="text" id="country" placeholder="Country">
+                    <label for="birth">Date of Birth: 
+                        <input type="date" id="bday" placeholder="Date of Birth">
+                    </label>
+                    <select id="gender">
+                        <option value="none" selected>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="dontwanna">I prefer not to say</option>
+                    </select>
+                    <input type="password" id="pass" placeholder="Password">
+                    <input type="password" id="confpass" placeholder="Confirm Password">
+                    <div class="agree">
+                        <label> 
+                            <input type="checkbox" name="" id="checkbox">
+                            I agree to the terms and conditions   
+                        </label>
+                    </div>
+                    <button type="submit" onclick="reset">Submit</button>
+                </form>
+            </div>
+        </div>
+        <button onclick="scrolltopfunction()" id="arrow" title="to the top">Top</button>
+    </div>
+    <script src="top_click_register.js"></script>
+</body>
+</html>
