@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo"><img src="Data/logo.png" alt="logo"></label>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="vehicles.html">Vehicles</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="launches.html">Launches</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+          </nav>
+          <section></section>
+    </header>
+    <div class="content">
+        <div class="video1">
+            <video autoplay muted loop plays-inline class="myVideo">
+                <source src="Data/rocket launch - edited with Clipchamp.mp4">
+            </video>
+        </div>
+        <div class="info">
+            <h1>The Number of Successful:</h1>
+        </div>
+        <div class="info2">
+            <h2>Launches: 4</h2>
+            <h2>Landings: 3</h2>
+            <h2>Reflights: 0</h2>
+        </div>
+        <div class="regist">
+            <h2>Our vision is to provide affordable space transportation and build a life on Mars.<br>
+                Be a part of SpaceTD!</h2>
+            <button onclick="gotoregister()" id="registbtn">Register</button>   
+        </div>
+        <button onclick="scrolltopfunction()" id="arrow" title="to the top">Top</button>
+    </div>
+    <script src="top_click_register.js"></script>
+</body>
+</html>
